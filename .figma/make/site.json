@@ -1,0 +1,11 @@
+{
+  "title": "Credora · Personal Finance",
+  "description": "Analyze your financial health, track loans, and simulate new loan impacts with clear scores and insights to plan smarter personal finances and credit moves.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
