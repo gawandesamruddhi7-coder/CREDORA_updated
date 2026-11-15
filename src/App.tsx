@@ -138,9 +138,9 @@ function Landing({ navigate }: { navigate: (page: string) => void }) {
         <div className="steps">{[["01","Enter","Add your income, expenses, existing loans and repayment details."],["02","Analyse","See your Credora Score and a transparent financial breakdown."],["03","Plan","Test new loans, compare scenarios and make a more informed choice."]].map(([n,t,d],i)=><div className="step" key={n}><span>{n}</span><div><h3>{t}</h3><p>{d}</p></div>{i<2&&<Icon name="arrow"/>}</div>)}</div>
       </section>
 
-      <section className="cta-section"><div><span className="kicker">MAKE YOUR NEXT MOVE WITH CONTEXT</span><h2>Build a clearer picture of your finances today.</h2><p>Start with a few details. Credora will organise the numbers and show you what matters.</p></div><Button variant="secondary" onClick={() => navigate("signup")} icon="arrow">Calculate my score</Button></section>
+      <section className="cta-section" id="calculator"><div><span className="kicker">MAKE YOUR NEXT MOVE WITH CONTEXT</span><h2>Build a clearer picture of your finances today.</h2><p>Start with a few details. Credora will organise the numbers and show you what matters.</p></div><Button variant="secondary" onClick={() => navigate("signup")} icon="arrow">Calculate my score</Button></section>
     </main>
-    <footer><Logo light/><p>Understand your credit. Plan your next move.</p><span>Credora · Educational project</span></footer>
+    <footer id="about"><Logo light/><p>Understand your credit. Plan your next move.</p><span>Credora · Educational project</span></footer>
   </div>;
 }
 
